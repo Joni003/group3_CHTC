@@ -1,17 +1,17 @@
 # Run "condor_submit_dag sd.dag" to cause all the code specified in
 # the following Directed Acyclic Graph (DAG), below, to run:
 #
-# (pre 1)  job1preSplitData.sh
+# (pre 1)    pre.sh
 #              |
 #              V
-# (job 1)  job1sumDataFiles.sub
+# (job 1)  submit.sub
 #            / | \
-#   four parallel runs of job1sumDataFiles.sh
+#   parallel runs on CHTC
 #            \ | /
 #              V
-# (post 1) job1postSumSumsFindMean.sh
+# (post 1)  post.sh
 #              |
-#              V
+#            output
 
 job 1 submbit.sub
 
