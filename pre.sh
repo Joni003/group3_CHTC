@@ -16,4 +16,4 @@ cat */*/* > all_plays.txt
 # Split the large file into 5 smaller files
 split -n 5 all_plays.txt output/output_version
 
-ls -1 output/output_version* > inputFileList
+ls -1 output/output_version* > InputFileList
