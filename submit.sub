@@ -18,4 +18,4 @@ request_cpus = 1
 request_memory = 1GB
 request_disk = 1MB
 
-queue file from **whatever we call the file list**
+queue file from InputFileList
