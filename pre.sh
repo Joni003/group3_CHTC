@@ -14,6 +14,6 @@ mkdir preoutput
 cat */*/* > all_plays.txt
 
 # Split the large file into 5 smaller files
-split -n 5 all_plays.txt preoutput/output_version
+split -n 5 all_plays.txt output_version
 
-ls -1 preoutput/output_version* > InputFileList
+ls -1 output_version* > InputFileList
