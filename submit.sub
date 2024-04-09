@@ -12,7 +12,7 @@ arguments = $(file)
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
 
-transfer_input_files = fileSum.sh,$(file)
+transfer_input_files = $(file)
 
 request_cpus = 1
 request_memory = 1GB
