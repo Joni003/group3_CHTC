@@ -2,7 +2,7 @@
 
 export LC_ALL=C
 
-cd output
+cd preoutput
 
 sort -m *.out -o merged_sorted
 
