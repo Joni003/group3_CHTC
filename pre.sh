@@ -6,8 +6,10 @@ wget https://pages.stat.wisc.edu/~jgillett/DSCP/CHTC/wordCounting/shakespeare.ta
 # Extract the Shakespeare archive
 tar -xf shakespeare.tar
 
+mkdir output
+
 # Concatenate all play files into one large file
-cat */* > all_plays.txt
+cat */*/* > all_plays.txt
 
 # Split the large file into 5 smaller files
-split -n 5 all_plays.txt output_version
+split -n 5 all_plays.txt output/output_version
