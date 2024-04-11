@@ -1,12 +1,17 @@
 #!/bin/bash
 
+rm -rf shakespeare.tar
+
 # Download Shakespeare archive with wget
 wget https://pages.stat.wisc.edu/~jgillett/DSCP/CHTC/wordCounting/shakespeare.tar
 
 # Extract the Shakespeare archive
 tar -xf shakespeare.tar
 
-#rm -rf preoutput
+rm -rf output_versiona*
+
+rm -rf output/
+
 
 #mkdir preoutput
 
